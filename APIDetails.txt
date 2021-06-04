@@ -1,0 +1,30 @@
+There are 4 API's present in this project. You can refer the postman collection i have attached in the project as well.
+
+API Base Path: http:localhost:5000/api/v1
+
+1. Method: GET
+   Path: /maker
+   Query Params:
+     - pageNo: Number (Optional, Default: 1) 
+     - limit: Number (Optional, Default: 100)
+
+2. Method: POST
+   Path: /maker
+   Request Body: Object
+     - model: String (Mandatory)
+     - make: String  (Mandatory)
+     - year: Number (Mandatory)
+   
+3. Method: PUT
+   Path: /maker
+   Request Body: Object
+     - model: String (Mandatory)
+     - make: String  (Mandatory)
+     - year: Number (Mandatory)
+     - id: Number (Mandatory)
+
+3. Method: DELETE
+   Path: /maker/:id
+   Path Param:
+     - id: Number (Mandatory)
+   
